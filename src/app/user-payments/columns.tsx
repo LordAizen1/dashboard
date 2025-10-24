@@ -52,6 +52,7 @@ export const columns: ColumnDef<Payment>[] = [
                 status === "pending" && "bg-yellow-500/40",
                 status === "success" && "bg-green-500/40",
                 status === "failed" && "bg-red-500/40",
+                status === "processing" && "bg-gray-800/40"
             )}
             >{status as string}
             </div>
